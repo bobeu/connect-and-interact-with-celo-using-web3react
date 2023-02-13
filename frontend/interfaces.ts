@@ -11,7 +11,7 @@ export interface NotificationProps {
 
 export interface PageProps {
   isUserAuthenticated?: boolean;
-  handleConnect: () => Promise<void>;
+  handleConnect: (x:number) => Promise<void>;
 }
 
 export interface AddressProp {

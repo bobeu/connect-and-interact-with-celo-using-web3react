@@ -234,7 +234,7 @@ export default function App(props: AppProps) {
         </Typography>
 
         <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-          <Grid container xs={12} spacing={6} p={4}>
+          <Grid container spacing={6} p={4}>
             <Grid item xs={12} md={6}>
               <Paper sx={{background: 'none'}}>
                 <Box

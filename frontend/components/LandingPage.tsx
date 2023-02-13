@@ -2,15 +2,33 @@ import React from 'react';
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { PageProps } from "@/interfaces";
-import { green, purple } from "@mui/material/colors";
+import { green } from "@mui/material/colors";
 import Footer from "./Footer";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Button from '@mui/material/Button';
 
+const styles = {
+  button: {
+    width: '25%',
+    height: '100px',
+    border: '0.1em solid green',
+    color: green[400],
+    borderRadius: '6px',
+    textAnchor: 'start',
+  },
+}
+
 export default function LandingPage(props: PageProps) {
   const [connecting, setConnecting] = React.useState<boolean>(false);
   const { handleConnect } = props;
+
+  const handleClick = async(index:number) => { 
+    setConnecting(true);
+    await handleConnect(index).then(() => {
+      setConnecting(false);
+    });
+  }
 
   return (
     <React.Fragment>
@@ -32,25 +50,21 @@ export default function LandingPage(props: PageProps) {
           <div className="lowerDiv">
             <Button 
               disabled={connecting} 
-              sx={{
-                width: '50%',
-                height: '120px',
-                border: '0.1em solid green',
-                color: green[400],
-                borderRadius: '6px',
-                textAnchor: 'start',
-              }} 
-              variant="text" onClick={
-                async() => { 
-                setConnecting(true);
-                await handleConnect().then(() => {
-                  setConnecting(false);
-                }) 
-                }
-              }
+              sx={styles.button} 
+              variant="text" 
+              onClick={() => handleClick(0)}
               className='connectButton'
             >
-              Connect Wallet
+              Metamask
+            </Button>
+            <Button 
+              disabled={connecting} 
+              sx={styles.button} 
+              variant="text" 
+              onClick={() => handleClick(1)}
+              className='connectButton'
+            >
+              WalletConnect
             </Button>
           </div>
         </div>
