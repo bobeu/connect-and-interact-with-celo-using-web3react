@@ -46,7 +46,15 @@ async function sendtransaction(options: OptionProps) {
         });
         break;
 
-
+      case 'compoundStaking':
+        const txn1 = await vault_ins.compoundStaking({value: value });
+        // const txn = await vault_ins.setToken(tokenAddr);
+        await txn1?.wait(2).then((rec: ContractReceipt) => {
+          result.receipt = rec;
+          result.view = false;
+          if(cancelLoading) cancelLoading();
+        });
+        break;
 
       case 'stakeOnBehalf':
         const txn_1 = await vault_ins.stakeOnBehalf(who, {value: value });

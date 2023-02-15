@@ -36,7 +36,6 @@ export default function Home() {
   async function handleConnect(index:number) {
     if (active) return;
     try {
-      console.log("Connectors", connectors);
       const selected = connectors[index];
       console.log('selected', selected);
       await activate(Injected).then(async() => {
