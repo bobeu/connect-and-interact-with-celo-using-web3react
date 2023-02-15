@@ -21,6 +21,7 @@
     "@walletconnect/web3wallet": "^1.1.1",
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.2.13",
     "antd": "^5.1.6",
     "bignumber.js": "^9.1.1",
     "eslint": "8.32.0",
