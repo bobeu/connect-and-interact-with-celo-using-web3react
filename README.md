@@ -1,4 +1,4 @@
-# Connect and interact with Celo using web3Onboard library 
+# Connect and interact with Celo using web3React 
 
 - Backend
   - Stacks
@@ -16,9 +16,7 @@ For full understanding of the backend, follow **[this tutorial](https://docs.cel
     - We3Js
 
 **How to run**
-> Note : Be sure to have either of the following browser wallet extension installed.
-
-- **[Coinbase wallet](https://chrome.google.com/webstore/detail/coinbase-wallet-extension/hnfanknocfeofbddgcijnmhnfnkdnaad?hl=en)**
+> Note : Be sure to Metamask browser wallet extension installed.
 
 - **[Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)**
 
@@ -37,8 +35,6 @@ yarn install
 ```bash
 yarn run dev
 ```
-
-<!-- **[Watch this video to know how to do that](https://youtu.be/8H-tctoES3Q)** -->
 
 # Smart contracts
 
@@ -91,4 +87,4 @@ Transaction hash: 0x341584db0df918849a36ed606feb7ab4f0d66142faa6261a15b7ebd0abd7
 
 - Demo
 
-**[Click to interact with Dapp](https://connect-to-celo-using-web3onboard-library.vercel.app/)**
+**[Click to interact with Dapp](https://connect-and-interact-with-celo-using-web3react.vercel.app/)**
