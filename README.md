@@ -16,16 +16,16 @@ For full understanding of the backend, follow **[this tutorial](https://docs.cel
     - We3Js
 
 **How to run**
-> Note : Be sure to Metamask browser wallet extension installed.
+> Note : Install Metamask browser extension.
 
 - **[Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)**
 
 ```bash
-git clone https://github.com/bobeu/connect-to-celo-using-web3onboard-library.git/
+git clone https://github.com/bobeu/connect-and-interact-with-celo-using-web3react.git/
 ```
 
 ```bash
-cd connect-to-celo-using-web3onboard-library/frontend
+cd connect-and-interact-with-celo-using-web3react/frontend
 ```
 
 ```bash
