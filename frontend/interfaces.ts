@@ -109,10 +109,7 @@ export const transactionResult : TransactionResultProp = {
   read: ethers.BigNumber.from(0)
 }
 
-export interface SpinnerProps {
-  color: string;
-  rest?: React.CSSProperties
-}
+
 
 export type SwitchChainReturn = number;
 
