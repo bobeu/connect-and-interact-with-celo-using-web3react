@@ -9,6 +9,11 @@ export interface NotificationProps {
   description: string | JSX.Element;
 }
 
+export interface SpinnerProps {
+  color: string;
+  rest?: React.CSSProperties
+}
+
 export interface PageProps {
   isUserAuthenticated?: boolean;
   handleConnect: (x:number) => Promise<void>;
